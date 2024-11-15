@@ -1,0 +1,71 @@
+.navbar_container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1440px;
+  width: 100%;
+  height: 8.4rem;
+  padding: 2.16rem 11.4rem;
+  background-color: #fff;
+  z-index: 9999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar_inner {
+  max-width: var(--main-maxwidth);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dowloadApp_button_container {
+  display: flex;
+  justify-content: center;
+}
+
+.dowload_button_wrapper {
+  width: 15.1rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .navbar_container {
+    padding: 2rem 5rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar_container {
+    padding: 1.5rem 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .navbar_container {
+    padding: 1rem 1.5rem;
+    height: 6rem;
+  }
+
+  
+  .nav_logo_container img {
+    width: 12rem; 
+  }
+
+  
+  .dowloadApp_button_container {
+    justify-content: flex-end;
+  }
+
+
+
+  .dowload_button_wrapper {
+    width: 13rem;
+    padding: 0.1rem 0.5rem;
+    font-size: 0.5rem; 
+  }
+}

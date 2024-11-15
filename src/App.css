@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Geist', sans-serif;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./assets/fonts/GeistVF.ttf') format('truetype');
+}
+
+html {
+  font-size: 62.5%;
+  background: var(--neutral-colours-white, #FDFCFF);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Geist', sans-serif;
+  background: var(--neutral-colours-white, #FDFCFF);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+
+button {
+  font-family: 'Geist', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+}
+
+button:focus {
+  outline: none;
+}
+
+select {
+  /* For Firefox */
+  -webkit-appearance: none;
+  /* for Chrome */
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+/* For IE10 */
+select::-ms-expand {
+  display: none;
+}
+
+
+
+/* APP */
+.app--row-container {
+  max-width: var(--main-maxwidth);
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* Media Queries */
+@media (min-width: 1400px) {
+  :root {
+    --main-maxwidth: 1360px;
+  }
+}
+
+@media (max-width: 990px) {
+  .app--actions-handler-wrapper {
+    top: 6.4rem !important;
+    right: 2rem !important;
+  }
+}
+
+@media (max-width: 675px) {
+  .app--row-container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 590px) {
+  .app--actions-handler-wrapper {
+    right: 0 !important;
+  }
+} 
